@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+torch
+langchain
+langchain_core
+langchain_huggingface
+langchain_community
