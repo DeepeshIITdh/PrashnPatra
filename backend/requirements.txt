@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-transformers
-torch
-peft
-langchain
-langchain_core
-langchain_huggingface
-langchain_community
