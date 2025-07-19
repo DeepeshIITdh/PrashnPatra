@@ -1,9 +1,7 @@
 torch
 transformers
-datasets
 peft
 bitsandbytes
-trl
 langchain
 langchain_core
 langchain_huggingface
@@ -11,3 +9,4 @@ langchain_community
 fastapi
 uvicorn
 requests
+streamlit

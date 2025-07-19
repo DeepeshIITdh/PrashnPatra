@@ -1,14 +1,16 @@
 from transformers import pipeline
 from langchain_huggingface import HuggingFacePipeline
 import os
+from dotenv import load_dotenv
 
-model_path = os.path.join('models', 'tinyllama_finetuned_on_quizgen')
+load_dotenv()
+MODEL_PATH = os.getenv('MODEL_PATH')
 
 def load_tinyllama_pipeline():
     pipe = pipeline(
         "text-generation",
-        model=model_path,
-        tokenizer=model_path,
+        model=MODEL_PATH,
+        tokenizer=MODEL_PATH,
         max_length=200,
         temperature=0.7,
         top_k=50,
